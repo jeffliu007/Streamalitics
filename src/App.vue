@@ -1,9 +1,10 @@
 <script setup>
-// import HelloWorld from './components/HelloWorld.vue'
 import Dashboard from "./components/Dashboard.vue";
+import Sidebar from "./components/sidebar/Sidebar.vue";
 </script>
 
 <template>
+	<Sidebar />
 	<div class="app-wrapper">
 		<Dashboard />
 	</div>
