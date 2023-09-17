@@ -4,9 +4,15 @@ import Leaderboard from "./Leaderboard.vue";
 import { fetchTopStreams } from "../apiUtils.mjs";
 import { fetchTopGames } from "../apiUtils.mjs";
 import { onMounted, ref, computed } from "vue";
+import { useRouter } from "vue-router";
 
+const router = useRouter();
 const topStreamsData = ref([]);
 const topGamesData = ref([]);
+
+const navigateToStreamCards = () => {
+	router.push({ name: "details" });
+};
 
 onMounted(async () => {
 	try {
@@ -27,7 +33,9 @@ const topGamesDataComputed = computed(() => topGamesData.value);
 	<div class="main-wrapper">
 		<h1>Title logo goes here</h1>
 		<div class="middle">
-			<streamCards :data="topStreamsDataComputed" />
+			<router-link :to="{ name: 'details' }">
+				<streamCards :data="topStreamsDataComputed" />
+			</router-link>
 			<div class="game-leaderboard">
 				<Leaderboard :data="topGamesDataComputed" />
 			</div>

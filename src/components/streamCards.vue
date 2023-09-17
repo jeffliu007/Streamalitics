@@ -51,6 +51,7 @@ export default {
 	color: white;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 }
 
 .stream-thumbnail {
