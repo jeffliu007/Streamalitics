@@ -4,8 +4,8 @@ import Sidebar from "./components/sidebar/Sidebar.vue";
 </script>
 
 <template>
-	<Sidebar />
 	<div class="app-wrapper">
+		<Sidebar />
 		<Dashboard />
 	</div>
 </template>
