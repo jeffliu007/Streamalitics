@@ -54,6 +54,9 @@ export default {
 	justify-content: space-between;
 }
 
+.stream-card:hover {
+	border: 2px solid #f9aa33;
+}
 .stream-thumbnail {
 	border-radius: 8px;
 	object-fit: cover;

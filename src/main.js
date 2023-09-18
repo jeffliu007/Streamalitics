@@ -10,6 +10,6 @@ import router from "./router";
 library.add(faUserSecret, faAnglesLeft);
 
 createApp(App)
-	.use(router)
 	.component("font-awesome-icon", FontAwesomeIcon)
+	.use(router)
 	.mount("#app");
