@@ -3,21 +3,21 @@ import Dashboard from "./components/Dashboard.vue";
 import streamDetails from "./components/streamDetails.vue";
 
 const routes = [
-	{
-		path: "/",
-		name: "Dashboard",
-		component: Dashboard,
-	},
-	{
-		path: "/details",
-		name: "details",
-		component: streamDetails,
-	},
+  {
+    path: "/",
+    name: "dashboard",
+    component: Dashboard,
+  },
+  {
+    path: "/details/:user_id",
+    name: "details",
+    component: streamDetails,
+  },
 ];
 
 const router = createRouter({
-	history: createWebHistory(),
-	routes,
+  history: createWebHistory(),
+  routes,
 });
 
 export default router;

@@ -8,7 +8,7 @@ import { sidebarWidth } from "./components/sidebar/state";
   <div class="app-wrapper">
     <Sidebar />
     <div :style="{ 'margin-left': sidebarWidth }">
-      <Dashboard />
+      <router-view></router-view>
     </div>
   </div>
 </template>

@@ -10,10 +10,6 @@ const router = useRouter();
 const topStreamsData = ref([]);
 const topGamesData = ref([]);
 
-const navigateToStreamCards = () => {
-  router.push({ name: "details" });
-};
-
 onMounted(async () => {
   try {
     const response = await fetchTopStreams();

@@ -23,7 +23,7 @@ export default {
     </h1>
 
     <SidebarLink to="/" icon="fa-house">Dashboard</SidebarLink>
-    <SidebarLink to="/dashboard" icon="fa fa-link">Links</SidebarLink>
+    <SidebarLink to="/details" icon="fa fa-link">Links</SidebarLink>
 
     <span
       class="collapse-icon"
