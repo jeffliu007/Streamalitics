@@ -9,8 +9,8 @@ export default {
 	},
 	methods: {
 		generateThumbnailURL(url) {
-			const width = 50;
-			const height = 50;
+			const width = 110;
+			const height = 80;
 			return url.replace("{width}", width).replace("{height}", height);
 		},
 	},
@@ -18,29 +18,36 @@ export default {
 </script>
 
 <template>
-	<div>
-		<h1>Popular Games</h1>
-		<div class="leaderboard-container">
-			<div v-for="(game, index) in data" :key="index" class="">
-				<h2>{{ game.user_name }}</h2>
-				<h3>{{ game.title }}</h3>
+	<div class="leaderboard-wrapper">
+		<h1>Popular Categories</h1>
+		<div>
+			<div
+				v-for="(game, index) in data"
+				:key="index"
+				class="leaderboard-container"
+			>
+				<h3>{{ (index, game.name) }}</h3>
 				<img :src="generateThumbnailURL(game.box_art_url)" />
-				<p>Viewers: {{ game.viewer_count }}</p>
 			</div>
 		</div>
 	</div>
 </template>
 
 <style scoped>
-.stream-cards-container {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr); /* Two columns in the grid */
-	grid-gap: 20px; /* Adjust the gap between cards as needed */
+.leaderboard-wrapper {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: flex-start;
 }
-.stream-card {
-	color: rgb(37, 37, 37);
-	border-radius: 9px;
 
-	padding: 5px;
+.leaderboard-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
+	padding-bottom: 25px;
 }
 </style>

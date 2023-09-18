@@ -13,19 +13,16 @@ export default {
 
 <template>
 	<div class="sidebar" :style="{ width: sidebarWidth }">
-		<!-- <h1>
+		<h1>
 			<span v-if="collapsed">
-				<div>V</div>
 				<div>S</div>
+				<div>A</div>
 			</span>
-			<span v-else>Vue Sidebar</span>
+			<span v-else>StrAlitics</span>
 		</h1>
 
 		<SidebarLink to="/" icon="fas fa-home">Home</SidebarLink>
 		<SidebarLink to="/dashboard" icon="fas fa-columns">Dashboard</SidebarLink>
-		<SidebarLink to="/analytics" icon="fas fa-chart-bar">Analytics</SidebarLink>
-		<SidebarLink to="/friends" icon="fas fa-users">Friends</SidebarLink>
-		<SidebarLink to="/image" icon="fas fa-image">Images</SidebarLink> -->
 
 		<span
 			class="collapse-icon"
@@ -37,18 +34,12 @@ export default {
 	</div>
 </template>
 
-<style>
-:root {
-	--sidebar-bg-color: #2f855a;
-	--sidebar-item-hover: #38a169;
-	--sidebar-item-active: #276749;
-}
-</style>
+<style></style>
 
 <style scoped>
 .sidebar {
 	color: white;
-	background-color: var(--sidebar-bg-color);
+	background-color: #232f34;
 
 	float: left;
 	position: fixed;

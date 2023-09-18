@@ -40,8 +40,8 @@ export default {
 <style scoped>
 .stream-cards-container {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr); /* Two columns in the grid */
-	grid-gap: 20px; /* Adjust the gap between cards as needed */
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 20px;
 }
 .stream-card {
 	color: rgb(37, 37, 37);

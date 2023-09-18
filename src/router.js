@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "./components/Dashboard.vue";
-import streamCards from "./components/streamCards.vue";
+import streamDetails from "./components/streamDetails.vue";
 
 const routes = [
 	{
@@ -11,7 +11,7 @@ const routes = [
 	{
 		path: "/details",
 		name: "details",
-		component: streamCards,
+		component: streamDetails,
 	},
 ];
 
