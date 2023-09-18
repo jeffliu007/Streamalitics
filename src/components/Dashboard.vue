@@ -31,11 +31,11 @@ const topGamesDataComputed = computed(() => topGamesData.value);
 
 <template>
 	<div class="main-wrapper">
-		<h1>Title logo goes here</h1>
+		<img src="../assets/logo.png" class="logo" />
 		<div class="middle">
-			<router-link :to="{ name: 'details' }">
-				<streamCards :data="topStreamsDataComputed" />
-			</router-link>
+			<!-- <router-link :to="{ name: 'details' }"> -->
+			<streamCards :data="topStreamsDataComputed" />
+			<!-- </router-link> -->
 			<div class="game-leaderboard">
 				<Leaderboard :data="topGamesDataComputed" />
 			</div>
@@ -50,7 +50,7 @@ const topGamesDataComputed = computed(() => topGamesData.value);
 	color: white;
 	padding: 30px;
 	border-radius: 8px;
-	border: 1px solid red;
+
 	position: relative;
 	right: 60px;
 }
@@ -66,5 +66,12 @@ const topGamesDataComputed = computed(() => topGamesData.value);
 	justify-content: center;
 	background-color: #4a6572;
 	border-radius: 8px;
+}
+
+.logo {
+	height: 160px;
+	width: 350px;
+	position: relative;
+	right: 30px;
 }
 </style>
