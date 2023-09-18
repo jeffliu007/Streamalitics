@@ -50,13 +50,14 @@ const topGamesDataComputed = computed(() => topGamesData.value);
   color: white;
   padding: 30px;
   border-radius: 8px;
-
   position: relative;
 }
 .middle {
   display: flex;
   flex-direction: row;
   gap: 2%;
+  position: relative;
+  bottom: 4em;
 }
 .game-leaderboard {
   color: rgb(231, 231, 231);
@@ -72,5 +73,6 @@ const topGamesDataComputed = computed(() => topGamesData.value);
   width: 350px;
   position: relative;
   right: 30px;
+  bottom: 45px;
 }
 </style>
