@@ -1,10 +1,10 @@
 # Streamalitics
 
-Simple dashboard analytics application built using Vue and utilized Twitch Api
+Simple dashboard analytics application built using Vue and utilizes Twitch Api
 
 Displays a variety of the top streamers currently live.
 
-Allows the user to choose a stream and look through each streamers saved videos in order from date published.
+Allows the user to choose a stream and look through each streamer's saved videos in order from the date published.
 
 ## Project Setup
 
