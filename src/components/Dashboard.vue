@@ -50,7 +50,7 @@ const topGamesDataComputed = computed(() => topGamesData.value);
 .middle {
 	display: flex;
 	flex-direction: row;
-	gap: 4%;
+	gap: 3%;
 	position: relative;
 	bottom: 4em;
 }
