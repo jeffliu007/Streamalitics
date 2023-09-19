@@ -23,3 +23,7 @@ npm run dev
 ```sh
 npm run build
 ```
+
+### Screenshots
+![1](https://github.com/jeffliu007/Streamalitics/assets/98433650/31cbab1e-037a-401d-809e-3fea0ae55a94)
+![2](https://github.com/jeffliu007/Streamalitics/assets/98433650/b0bc4753-aef8-4e94-94c3-4808c5bae292)
