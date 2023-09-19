@@ -12,6 +12,6 @@ import router from "./router";
 library.add(faUserSecret, faAnglesLeft, faHouse, faLink);
 
 createApp(App)
-  .component("font-awesome-icon", FontAwesomeIcon)
-  .use(router)
-  .mount("#app");
+	.component("font-awesome-icon", FontAwesomeIcon)
+	.use(router)
+	.mount("#app");
